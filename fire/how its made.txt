@@ -1,0 +1,3 @@
+how its made: use one 4D noise texture as the base (set the W to time), in the mapping node change the Y every frame, multiply the noise by an upwards gradient, and two inwards facing gradients then add a color ramp node.
+
+for the pixelation effect, put in a Voronoi texture at randomness between the mapping and texture coordinate nodes. do this for every coordinate node. important note, use the position socket and not the color or distance sockets.
